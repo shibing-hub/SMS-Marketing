@@ -1,9 +1,13 @@
-html,body,.container-fluid,.row{
+html,body,.container,.container-fluid,.row{
     margin:0;
     padding:0;
     height:100%;
 }
-
+.container{
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-shadow:3px 3px 30px #ccc;
+}
 .left_nav{
 background:#4b6c8b;
 height:100%;
@@ -53,7 +57,7 @@ height:100%;
 
 
 /*index.html*/
-.lala{
+.title{
 	color:#fff;
 	font-size:40px;
 	margin:150px !important;
@@ -92,6 +96,7 @@ height:100%;
 .my_table,.my_table th{
 	text-align:center;
 	line-height: inherit;
+	vertical-align:middle !important;
 }
 .my_table,.my_table td{
 	vertical-align:middle !important;
@@ -102,6 +107,12 @@ height:100%;
 /*export.html*/
 .export {
 	margin-top:100px;
+}
+.export input{
+	width:auto !important;
+}
+.export select{
+	width:auto !important;
 }
 .cur{
 	background:#587ea1;

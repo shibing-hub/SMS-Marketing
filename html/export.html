@@ -7,7 +7,7 @@
     <title>  </title>
 
     <!-- Bootstrap -->
-    <link href="../css/insured.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../kartik-v-bootstrap-fileinput-9d72340/css/fileinput.min.css" rel="stylesheet">
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
        <!-- 左侧导航 -->   
         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 left_nav">
@@ -59,83 +59,67 @@ $(document).ready(function(){
                         <li class="active">导出数据</li>
                 </ol>
                 <div class="col-lg-1 col-md-2 col-sm-2 col-xs-3 user ">
-                    <span class="glyphicon glyphicon-user " aria-hidden="true"></span>&nbsp;小红
+                    <span class="glyphicon glyphicon-user " aria-hidden="true"></span><span>小红</span>
                 </div>
             </div>
            
-            <div class="row export col-md-10 col-sm-12  col-md-offset-1  ">            
-                <form class="form-inline row">
-                    <div class="form-group  col-sm-offset-2">
-                      <label for="exampleInputName2">营销次数&nbsp;&nbsp;<&nbsp;&nbsp;</label>
-                      <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+            <div class="row export col-md-10 col-sm-12  col-sm-offset-3  ">            
+                
+                <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">营销次数</label>
+                        <div class="col-sm-10">
+                          <select class="form-control col-xs-2">
+                              <option>&nbsp;<&nbsp;</option>
+                              <option>&nbsp;>&nbsp;</option>
+                                                                  
+                            </select>
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="请输入营销次数">
+                        </div>
                     </div>
                    
-                    <button type="submit" class="btn btn-primary" >导出</button>
+                    
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10 col-md-4 col">
+                        <button type="submit" class="btn btn-primary ">导出</button>
+                      </div>
+                    </div>
                   </form>
+                  
 
 
-                  <!-- <div class="table-responsive">
-                        <table class="table my_table table-bordered table-hover">
-                                <tr>
-                                        <th class=""></td>
-                                        <th class="">活动描述</td>
-                                        <th class="">短信内容</td>
-                                        <th colspan="2" class=" ">操作</td>
-                                       
-                                </tr>
-                                <tr>
-                                        <td class="">
-                                            <div class="checkbox">
-                                                <label>
-                                                  <input type="checkbox" id="blankCheckbox" value="option1" >
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td class="">活动描述是在项目网络图中使用的短语</td>
-                                        <td class="">活动定义是对工作分解结构中规定的可交付成果或半成品产生所必须进行的具体活动进行定义，并形成文档的活动。</td>
-                                        <td ><button class="btn btn-default">修改</button></td>
-                                        <td><button class="btn btn-default">删除</button></td>
-                                       
-                                </tr>
-                                <tr>
-                                          <td class="">
-                                            <div class="checkbox">
-                                                <label>
-                                                  <input type="checkbox" id="blankCheckbox" value="option1" >
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td class="">活动描述是在项目网络图中使用的短语活动描述是在项目网络图中使用的短语</td>
-                                        <td class="">活动定义是对工作分解结构中规定的可交付成果或半成品产生所必须进行的具体活动进行定义，</td>
-                                        <td><button class="btn btn-default">修改</button></td>
-                                        <td><button class="btn btn-default">删除</button></td>
-                                       
-                                </tr>
-                                <tr>
-                                          <td class="">
-                                            <div class="checkbox">
-                                                <label>
-                                                  <input type="checkbox" id="blankCheckbox" value="option1" >
-                                                </label>
-                                              </div>
-                                        </td>
-                                        <td class="">...</td>
-                                        <td class="">活动定义是对工作分解结构中规定的可交付成果或半成品产生所必须进行的具体活动进行定义，并形成文档的活动。</td>
-                                        <td><button class="btn btn-default">修改</button></td>
-                                        <td><button class="btn btn-default">删除</button></td>
-                                       
-                                </tr>
-                        </table>
-                 </div>
-         <button type="button" class="btn btn-success col-sm-1 col-xs-5 ">导出</button> -->
+
+
+
+
+              
+              
+              
+              
+              
+              
+              <!-- <form class="form-inline row">
+                    <div class="form-group  col-xs-offset-2 col-xs-12 col-sm-8 col-md-6 row">
+                      <label for="exampleInputName2" class=" col-xs-4 col-sm-3 " >营销次数</label>
+                      <select class="form-control col-xs-1 ">
+                          <option>&nbsp;&nbsp;<&nbsp;&nbsp;</option>
+                          <option>&nbsp;&nbsp;>&nbsp;&nbsp;</option>
+                        </select>
+                        <div class="col-xs-12">
+                      <input type="text" class="form-control col-xs-12" id="exampleInputName2" placeholder="请输入次数">
+                    </div>
+                    </div>
                    
+                    <button type="submit" class="btn btn-primary col-xs-4 col-xs-offset-4 col-md-2" >导出</button>
+                  </form> -->
+
+
+                 
 
             </div>
       </div>
     </div>
 
-
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
  
   </body>
   </html>
